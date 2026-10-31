@@ -1,16 +1,13 @@
-# PT-Showcase-Network
-A three-tier, enterprise network in the setting of a county courthouse. \
-Concepts covered - device security, network segmentation, OSPF routing, QoS, Windows Active Directory, DNS, DHCP, AAA
 # Enterprise County Courthouse Network Infrastructure
 
 ## 📌 Project Overview
-This project simulates a secure, three-tier enterprise network for a multi-story county courthouse using Cisco Packet Tracer. It demonstrates hierarchical network architecture, VLAN segmentation, dynamic intra-building routing via OSPF, centralized identity & core infrastructure services, and end-to-end device security.
+This project simulates a secure, three-tier enterprise network for a multi-floor county courthouse using Cisco Packet Tracer. It demonstrates hierarchical network architecture, VLAN segmentation, dynamic routing via OSPF, Centralized Authorization, Access, and Accounting, and network device security.
 
 ### Key Features & Technologies
-* **Architecture:** Three-Tier (Core, Distribution/Access, Edge)
+* **Architecture:** Three-Tier (Edge, Core, Distribution/Access)
 * **Routing Protocol:** OSPF Area 0 (Single Area)
 * **Segmentation:** 15+ Departmental VLANs with VLSM Subnetting
-* **Services:** Centralized DHCP (with IP Helper), DNS, AAA/RADIUS Authentication, Web Server
+* **Services:** Centralized DHCP , DNS, AAA/RADIUS Authentication, Web Server
 * **Security & Control:** Port Security, SSH Management, Native VLAN Isolation, Passive Interfaces
 
 ---
@@ -22,7 +19,7 @@ This project simulates a secure, three-tier enterprise network for a multi-story
 * **Edge Router / Firewall:** Handles WAN handoff to ISP, NAT, and outer firewall boundary.
 * **`L3Sw-Core`:** Acts as the high-speed backbone, aggregating inter-floor traffic and server farm connections.
 * **`L3Sw-2` (Floor 1), `L3Sw-4` (Floor 2), `L3Sw-3` (Floor 3):** Multilayer switches providing local inter-VLAN routing for departmental offices.
-* **`L2Sw-1` (Annex):** Layer 2 switch servicing Emergency Management and outbuilding operations.
+* **`L2Sw-1` (Annex):** Layer 2 switch servicing the Office of Emergency Management
 
 ---
 
