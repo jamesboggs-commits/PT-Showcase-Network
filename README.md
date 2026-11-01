@@ -63,13 +63,10 @@ router ospf 1
  no passive-interface GigabitEthernet0/0/1
  network 10.10.0.0 0.0.255.255 area 0
 
-### 1. Dynamic Routing (OSPF)
-OSPF is enabled across all Layer 3 switches and the Edge Router to allow automatic route convergence.
+### 2. DHCP Relay (`ip helper-address`)
+Workstations on departmental VLANs obtain dynamic IP configurations from the Windows Server.
 ```ciscolike
-router ospf 1
- router-id 1.1.1.1
- log-adjacency-changes
- passive-interface default
- no passive-interface GigabitEthernet0/0/1
- network 10.10.0.0 0.0.255.255 area 0
-
+interface Vlan20
+ description Assessor_Office_SVI
+ ip address 10.10.0.1 255.255.255.248
+ ip helper-address 10.10.0.226
