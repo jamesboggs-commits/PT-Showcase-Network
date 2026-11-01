@@ -16,7 +16,7 @@ It demonstrates hierarchical network architecture, network segmentation, dynamic
 
 ## 📐 Network Topology
 ![Logical Topology](docs/Logical_Topology.png)
-**NOTE:** Cisco Packet Tracer does not have the option for 48 port switches. Individual floor switch icons represent **stacked Catalyst 3850 Switch chassis** using unified backplanes and cross-module LACP EtherChannel uplinks to the core.
+**NOTE:** Cisco Packet Tracer does not have the option for 48 port switches. Individual floor switch icons represent **two stacked Catalyst 3850 Switch chassis** using unified backplanes and cross-module EtherChannel uplinks to the core. The basement is an exception because one 24-port L2 switch is more than enough.
 ### Device Roles
 * **Edge Router / Firewall:** Handles WAN handoff to ISP, NAT, and outer firewall boundary.
 * **`L3Sw-Core`:** Acts as the backbone, facilitating inter-floor traffic and server connections.
