@@ -53,7 +53,7 @@ It demonstrates hierarchical network architecture, VLAN segmentation, dynamic ro
 
 ## 🛠️ Configuration & Implementation Highlights
 
-### 1. Dynamic Routing (OSPF Area 0)
+### 1. Dynamic Routing (OSPF)
 OSPF is enabled across all Layer 3 switches and the Edge Router to allow automatic route convergence.
 ```ciscolike
 router ospf 1
@@ -62,3 +62,14 @@ router ospf 1
  passive-interface default
  no passive-interface GigabitEthernet0/0/1
  network 10.10.0.0 0.0.255.255 area 0
+
+### 1. Dynamic Routing (OSPF)
+OSPF is enabled across all Layer 3 switches and the Edge Router to allow automatic route convergence.
+```ciscolike
+router ospf 1
+ router-id 1.1.1.1
+ log-adjacency-changes
+ passive-interface default
+ no passive-interface GigabitEthernet0/0/1
+ network 10.10.0.0 0.0.255.255 area 0
+
