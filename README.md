@@ -15,7 +15,7 @@ It demonstrates hierarchical network architecture, VLAN segmentation, dynamic ro
 ---
 
 ## 📐 Network Topology
-![Logical Topology](docs/logical-topology.png)
+![Logical Topology](docs/Logical_Topology.png)
 
 ### Device Roles
 * **Edge Router / Firewall:** Handles WAN handoff to ISP, NAT, and outer firewall boundary.
@@ -26,7 +26,7 @@ It demonstrates hierarchical network architecture, VLAN segmentation, dynamic ro
 ---
 
 ## 📊 VLAN & IP Subnetting Scheme
-![Logical Topology](docs/addressing-scheme.png)
+![Logical Topology](docs/Addressing_Scheme.png)
 
 | VLAN ID | Subnet Name / Department | Network Address | Subnet Mask | Usable IP Range | Default Gateway |
 |:-------:|:-------------------------|:----------------|:-----------:|:----------------|:----------------|
