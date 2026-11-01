@@ -62,7 +62,7 @@ router ospf 1
  passive-interface default
  no passive-interface GigabitEthernet0/0/1
  network 10.10.0.0 0.0.255.255 area 0
-
+```
 ### 2. DHCP Relay (`ip helper-address`)
 Workstations on departmental VLANs obtain dynamic IP configurations from the Windows Server.
 ```ciscolike
@@ -70,3 +70,19 @@ interface Vlan20
  description Assessor_Office_SVI
  ip address 10.10.0.1 255.255.255.248
  ip helper-address 10.10.0.226
+```
+### 3. Security Implementation
+* **Port Security:** Enabled on access ports across floor switches to restrict MAC address learning and prevent unauthorized device attachments.
+* **Management Access:** Telnet is disabled globally in favor of encrypted SSH access over the Management VLAN (`VLAN 99`).
+* **Guest Isolation:** Access Control Lists (ACLs) are deployed at the edge to ensure the **Guest Wi-Fi (VLAN 60)** has internet access only, completely blocking lateral movement into county department subnets and the Server Farm.
+
+### 4. Link Aggregation (EtherChannel)
+Port channels are configured between the floor Layer 3 switches and the Core switch using LACP (IEEE 802.3ad) to provide redundancy and aggregate bandwidth.
+```ciscolike
+interface range GigabitEthernet0/1 - 2
+ channel-group 1 mode active
+!
+interface Port-channel 1
+ switchport mode trunk
+ description Core_Uplink_Aggregation
+```
