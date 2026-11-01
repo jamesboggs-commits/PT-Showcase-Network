@@ -2,7 +2,8 @@
 
 ## 📌 Project Overview
 This project simulates a secure, three-tier enterprise network for a multi-floor county courthouse using Cisco Packet Tracer. \
-It demonstrates hierarchical network architecture, VLAN segmentation, dynamic routing via OSPF, Centralized AAA/RADIUS, and basic network device security.
+It demonstrates hierarchical network architecture, VLAN segmentation, dynamic routing via OSPF, Centralized AAA/RADIUS, QoS, EtherChannel, and basic network device security. \
+
 
 ### Key Features & Technologies
 * **Architecture:** Three-Tier (Edge, Core, Distribution/Access)
@@ -18,17 +19,19 @@ It demonstrates hierarchical network architecture, VLAN segmentation, dynamic ro
 
 ### Device Roles
 * **Edge Router / Firewall:** Handles WAN handoff to ISP, NAT, and outer firewall boundary.
-* **`L3Sw-Core`:** Acts as the high-speed backbone, aggregating inter-floor traffic and server farm connections.
-* **`L3Sw-2` (Floor 1), `L3Sw-4` (Floor 2), `L3Sw-3` (Floor 3):** Multilayer switches providing local inter-VLAN routing for departmental offices.
-* **`L2Sw-1` (Annex):** Layer 2 switch servicing the Office of Emergency Management
+* **`L3Sw-Core`:** Acts as the backbone, facilitating inter-floor traffic and server connections.
+* **`L3Sw-2` (Floor 1), `L3Sw-3` (Floor 2), `L3Sw-4` (Floor 3):** Multilayer switches providing local inter-VLAN routing for departmental offices.
+* **`L2Sw-1` (Basement):** Layer 2 switch servicing the Office of Emergency Management
 
 ---
 
 ## 📊 VLAN & IP Subnetting Scheme
+![Logical Topology](docs/addressing-scheme.png)
 
 | VLAN ID | Subnet Name / Department | Network Address | Subnet Mask | Usable IP Range | Default Gateway |
 |:-------:|:-------------------------|:----------------|:-----------:|:----------------|:----------------|
 | **10**  | Emergency Management     | 10.10.0.128/28  | 255.255.255.240 | 10.10.0.129 - 10.10.0.142 | 10.10.0.129 |
+| **11**  | Emergency Management     | 10.10.0.128/28  | 255.255.255.240 | 10.10.0.129 - 10.10.0.142 | 10.10.0.129 |
 | **20**  | Assessor's Office        | 10.10.0.0/29    | 255.255.255.248 | 10.10.0.1 - 10.10.0.6     | 10.10.0.1   |
 | **21**  | Collector's Office       | 10.10.0.8/29    | 255.255.255.248 | 10.10.0.9 - 10.10.0.14    | 10.10.0.9   |
 | **30**  | Circuit Clerk            | 10.10.0.32/27   | 255.255.255.224 | 10.10.0.33 - 10.10.0.62   | 10.10.0.33  |
