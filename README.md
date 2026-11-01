@@ -16,7 +16,7 @@ It demonstrates hierarchical network architecture, network segmentation, dynamic
 
 ## 📐 Network Topology
 ![Logical Topology](docs/Logical_Topology.png)
-
+This image is subject to change to a screenshot of the PT file. There is one L2 switch per office space in the new topology.
 ### Device Roles
 * **Edge Router / Firewall:** Handles WAN handoff to ISP, NAT, and outer firewall boundary.
 * **`L3Sw-Core`:** Acts as the backbone, facilitating inter-floor traffic and server connections.
