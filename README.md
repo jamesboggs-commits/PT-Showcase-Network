@@ -1,7 +1,7 @@
 # Enterprise County Courthouse Network Infrastructure
 
 ## 📌 Project Overview
-This project simulates a secure, three-tier enterprise network for a multi-floor county courthouse using Cisco Packet Tracer. \
+This project simulates a secure, three-tier enterprise network for a multi-floor county courthouse using Cisco Modeling Labs. \
 It demonstrates hierarchical network architecture, network segmentation, dynamic routing, Centralized AAA, QoS, EtherChannel, and basic network device security.
 
 
