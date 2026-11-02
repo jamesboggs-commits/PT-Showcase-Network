@@ -27,12 +27,6 @@ It demonstrates hierarchical network architecture, network segmentation, dynamic
 
 ## 📊 VLAN & IP Subnetting Scheme
 
-### VLAN & VLSM Subnetting Scheme
-
-### VLAN & VLSM Subnetting Scheme (Strictly Packed)
-
-### VLAN & VLSM Subnetting Scheme
-
 | VLAN ID | Department           | Subnet Address | Mask | CIDR | Usable Hosts | Usable Host Range | Default Gateway |
 | :---:  | :---                  | :---           | :--- | :---: | :---:       | :---              | :--- |
 | **10** | Emergency Management  | 10.10.10.0 | 255.255.255.224 | /27 | 30 | 10.10.10.1 - 10.10.10.30 | 10.10.10.1 |
