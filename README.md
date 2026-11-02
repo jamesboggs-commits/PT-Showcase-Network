@@ -15,7 +15,7 @@ It demonstrates hierarchical network architecture, network segmentation, dynamic
 ---
 
 ## 📐 Network Topology
-![Logical Topology](docs/Logical_Topology.png)\
+![Logical Topology](docs/Logical_Topology.png)
 
 ### Device Roles
 * **Edge Router / Firewall:** Handles WAN handoff to ISP, NAT, and outer firewall boundary.
