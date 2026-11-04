@@ -18,7 +18,7 @@ It demonstrates hierarchical network architecture, network segmentation, dynamic
 ![Logical Topology](docs/Logical_Topology.png)
 
 ### Device Roles
-* **Edge Router / Firewall:** Handles WAN handoff to ISP, NAT, and outer firewall boundary.
+* **`Edge Router / Firewall`:** Handles WAN handoff to ISP, NAT, and outer firewall boundary.
 * **`L3Sw-Core`:** Acts as the backbone, facilitating inter-floor traffic and server connections.
 * **`L3Sw-2` (Floor 1), `L3Sw-3` (Floor 2), `L3Sw-4` (Floor 3):** Multilayer switches providing local inter-VLAN routing for departmental offices.
 * **`L2Sw-1` (Basement):** Layer 2 switch servicing the Office of Emergency Management
