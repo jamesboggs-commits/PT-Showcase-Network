@@ -2,12 +2,12 @@
 
 ## 📌 Project Overview
 This project simulates a secure, three-tier enterprise network for a multi-floor county courthouse using Cisco Packet Tracer. \
-It demonstrates hierarchical network architecture, network segmentation, dynamic routing, centralized access, authorization, and accounting (AAA), quality of service, link aggregation, NAT, DHCP, DNS, and basic network device security.
+It demonstrates hierarchical network architecture, network segmentation, dynamic routing, router redundancy, centralized access, authorization, and accounting (AAA), quality of service, link aggregation, NAT, DHCP, DNS, and basic network device security.
 
 
 ### Key Features & Technologies
 * **Architecture:** Three-tier (Edge, Core, Distribution/Access)
-* **Routing Protocol:** OSPF
+* **Routing Protocol:** OSPF, VRRP
 * **Segmentation:** 15+ Departmental VLANs with VLSM subnetting
 * **Services:** Centralized DHCP , DNS, AAA/RADIUS Authentication, Web Server
 * **Security & Control:** Port security, Native VLAN isolation, Passive interfaces, SSH management, SNMP, LLDP
