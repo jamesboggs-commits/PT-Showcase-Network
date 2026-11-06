@@ -7,7 +7,7 @@ It demonstrates hierarchical network architecture, network segmentation, dynamic
 
 ### Key Features & Technologies
 * **Architecture:** Three-tier (Edge, Core, Distribution/Access)
-* **Routing Protocol:** OSPF, VRRP, BGP
+* **Routing Protocols:** OSPF, VRRP, BGP
 * **Segmentation:** 15+ Departmental VLANs with VLSM subnetting
 * **Services:** Centralized DHCP , DNS, AAA/RADIUS Authentication, Web Server
 * **Security & Control:** Port security, Native VLAN isolation, Passive interfaces, SSH management, SNMP, LLDP, MAC address filtering
