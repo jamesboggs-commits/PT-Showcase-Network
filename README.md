@@ -10,7 +10,7 @@ It demonstrates hierarchical network architecture, network segmentation, dynamic
 * **Routing Protocol:** OSPF, VRRP
 * **Segmentation:** 15+ Departmental VLANs with VLSM subnetting
 * **Services:** Centralized DHCP , DNS, AAA/RADIUS Authentication, Web Server
-* **Security & Control:** Port security, Native VLAN isolation, Passive interfaces, SSH management, SNMP, LLDP
+* **Security & Control:** Port security, Native VLAN isolation, Passive interfaces, SSH management, SNMP, LLDP, MAC address filtering
 
 ---
 
